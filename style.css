@@ -1,0 +1,602 @@
+/* BOX SIZING */
+
+
+/******* GLOBALES *******/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+.contenedor1{
+    width:100%;
+    height:100%;
+
+    max-width: 1000px;
+    margin:0 auto;
+    overflow: hidden;
+    margin:0 auto;
+    
+}
+
+/* SELECTORES DE ETIQUETA */
+
+* {
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    justify-content: center;
+    margin: 0px;
+    background-image: url(https://image.freepik.com/vector-gratis/cielo-o-cielo-naturaleza-atardecer-o-amanecer_107791-583.jpg);
+    background-size: cover;
+}
+
+main {
+    width: 100vw;
+    height: auto;
+    padding-bottom: 10rem;
+   
+}
+
+.img {
+    width: 100%;
+}
+
+footer {
+    
+    justify-content: center;
+    text-align: center;
+    color: white;
+    /* background-color: aquamarine; */
+}
+
+header {
+    width: 100%;
+    height: 25%;
+    background-color:#c7b8e7;
+    display: flex;
+}
+
+/* CLASES */
+
+
+/* HEADER */
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+#xd23 {
+    height:150px;
+    width:400px;
+}
+
+#logo {
+    width: 4rem;
+    justify-content: center;
+    
+}
+
+
+/* MAIN */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blue; */
+    border: none;
+    margin: 500 auto;
+}
+
+
+/* BOTONES */
+
+
+/* .navigation-bar button, */
+
+.carousel a {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    margin-left: -2.3rem;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+#nosotros {
+    display: flex;
+    color: white;
+    font-size: .10rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    width: 80px;
+    height: 30px;
+}
+
+.navigation-bar img{
+    
+        position: relative;
+        display: inline-block;
+        text-align: center;
+      }
+     
+
+.carousel i {
+    vertical-align: center;
+}
+
+.button,
+#filter,
+#order,
+#nosotros,
+#species {
+    border-color: #00B3CC;
+    cursor: pointer;
+    color: white;
+    background-color: #F4908A;
+ 
+}
+
+.button:hover,
+#filter:hover,
+#order:hover,
+#species:hover {
+    background-color: #9BF2BA;
+    border-color: rgb(133, 208, 150);
+    color: black;
+}
+
+#catalogo {
+    width: 7rem;
+    padding: 1rem;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+/* .order-and-filter-button {
+    justify-content: space-around;
+    margin: 0 auto;
+    cursor: pointer;
+} */
+
+.order-and-filter-button {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+/* CAROUSEL */
+
+.carousel {
+    width: 85vw;
+    height: 50vh;
+    margin: 1.5rem auto;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+}
+
+.slide {
+    width: 80%;
+    height: 120%;
+    
+  
+}
+
+#facts {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .9);
+    border: #9BF2BA 0.10rem solid;
+}
+
+#facts h2 {
+    font-size: 1rem;
+}
+
+#facts p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#facts img {
+    width: 10rem;
+}
+
+.order-filter {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.specie {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*DATA*/
+
+.all-data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*Para alinear las tarjetas verticalmente*/
+    justify-content: space-around;
+    margin: 0.8rem 2rem;
+    width: 90vw;
+    height: 60vh;
+    
+    /* align-items: space-between;
+    justify-items: space-between; */
+}
+
+.all-data::-webkit-scrollbar {
+    background-color: #00B3CC;
+    height: 0px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.all-data::-webkit-scrollbar-thumb {
+    background: pink;
+    border-radius: 1rem;
+}
+
+.all-data::-webkit-scrollbar-thumb:hover {
+    background: #9BF2BA;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+/*fondo de la tarjeta (adelante)*/
+ .data-card {
+    width: 45%; 
+    margin: auto;
+    align-items: center;
+    border: #00B3CC 0.5rem;
+    justify-content: space-between; 
+}
+
+
+.flip-card-inner {
+
+    transition: transform 0.6s; /* Para que le de estilo al giro en la tarjeta*/
+    transform-style: preserve-3d; /* Especifica que los elementos hijos conservarán su posición 3D*/
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /*Rotar al darle click*/
+}
+
+.flip-card-front,  /*estilos para darle borde a la tarjeta, centrar la imagen, el titulo*/
+.flip-card-back {
+    backface-visibility: hidden;
+    vertical-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    height: 100%;
+    border-radius: 1rem;
+    -webkit-box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
+    box-shadow: -9px 10px 5px 0px rgba(0, 0, 0, 0.11);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.flip-card-front {  
+    position: absolute;
+}
+
+.flip-card-back { /*Para que aparezca la información atrás*/
+    background-color: #EBEBEB;
+    color: black;
+    transform: rotateY(180deg);
+    border: #00B3CC 0.3rem solid;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.info {
+    max-width: 50%;
+    text-align: center;
+}
+
+.icon {
+    display: none;
+}
+
+.character-page {
+    width: 100vw;
+}
+
+.character-name {
+    font-weight: 600;
+}
+
+.character-img {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.dimension {
+    font-weight: 600;
+    color: rgb(38, 39, 39);
+}
+
+
+
+/*ID*/
+
+#back,
+#next {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 25% 0 0 0;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#filter,
+#order,
+#species {
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    padding-left: 0.5rem;
+    font-weight: 600;
+}
+
+#fiilter,
+#order {
+    flex: wrap;
+    margin:0 1rem;
+}
+
+h3 {
+    margin: 0;
+}
+
+
+option {
+    background-color: white;
+    color: black;
+}
+
+
+/* Characters */
+
+#character-page {
+    margin: 1rem 0;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (min-width:768px) {
+    #logo {
+        width: 8rem;
+    }
+    header {
+        width: 100%;
+        height: auto;
+        /*background-color: rgba(0, 0, 0, 0.85);*/
+        display: flex;
+    }
+    main {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .navigation-bar {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    div.content {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .carousel {
+        width: 1000px;
+    }
+    .carousel a {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .slide {
+        width: 80%;
+    }
+    #facts {
+        width: 80%;
+        height: 80%;
+    }
+    #facts h2 {
+        font-size: 2rem;
+    }
+    #facts p {
+        font-size: 1.5rem;
+    }
+
+    .all-data {
+        width: 1200px;
+        height: 1000px;
+    }
+    .flip-card {
+        width: 30%;
+        
+    }
+    .flip-card-front {
+        height: auto;
+        background-color: #9fcaee;
+    }
+    .flip-card-front,
+    .flip-card-back {
+        width: 100%;
+        margin-bottom: 5rem;
+        height: 450px;
+    }
+    .info {
+        margin-top: 1rem;
+    }
+    .flip-card-back .info {
+        height: 100%;
+    }
+    .icon {
+        display: block;
+        justify-content: center;
+        align-items: baseline;
+        width: 30px;
+        margin: 0 auto;
+        padding: 0.5rem 0;
+    }
+    .all-data {
+        width: 1200px;
+        height: 1000px;
+    }
+    #filter,
+    #order,
+    #species {
+        width: 10rem;
+        height: 3rem;
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+}
+
+.imagen1{
+    width:300px;
+    height:300px;
+}
+.botoness{
+    display:flex;
+    height: 100vh;
+    align-items: flex-end;
+
+}
+
+
+
+.botoness a:nth-child(2){
+    align-self: flex-start;
+    
+}
+
+
+
+.botoness a:nth-child(4){
+    align-self: flex-start;
+}
+
+
+ 
+ .a{
+     
+     align-self: flex-start
+ }
+ 
+ .boton1{
+ text-align: center;
+ }
+  .boton1 a:link, a:visited
+  {
+     background-color:#e714a1;
+     color: white;
+     padding: 14px 25px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     padding-right: 20px;
+     border-radius: 15px;
+     border: 3px double #6b0438;
+     
+     
+ 
+    
+   }
+
+   a:hover, a:active {
+    background-color:purple;
+  }
+
+  .nosot{
+    
+        display:flex;
+        height: 100vh;
+        align-items: flex-end;
+        text-align: ;
+
+        
+    }
+
+    .titulo a:link, a:visited
+    {
+       background-color:#e714a1;
+       color: white;
+       padding: 14px 25px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       padding-right: 20px;
+       border-radius: 15px;
+       border: 3px double #6b0438;
+    }
+
+
+
+    #texto{
+        text-align: justify;
+        border-style: solid;
+        border-width: 5px;
+        font-size: 10px;
+        color: darkmagenta;
+        font-weight: bolder;
+        background-size: contain;
+        
+    }
+
+    #xd23{
+        width: 200px;
+        height: 100px;   
+    }
+
+    .curiosities{
+        text-align: justify;
+    }
+
+  

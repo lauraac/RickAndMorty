@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <!--ICON-->
+
+</head>
+
+<body>
+    <div class="contenedor1">
+    <!-- DATA -->
+
+    <script src="./data/rickandmorty/rickandmorty.js" ></script>
+
+
+    <!-- <section class="content"> -->
+
+    <!-- HEADER -->
+
+    <header>
+        <nav class="navigation-bar">
+
+            <img src="https://i.pinimg.com/originals/f8/f3/c3/f8f3c3e177614d714df81f9294ee11ff.png"
+                  alt="logo" id="logo"></a>
+
+
+           <img src="https://occ-0-1818-37.1.nflxso.net/dnm/api/v6/TsSRXvDuraoJ7apdkH6tsHhf-ZQ/AAAABWvcCE9czzpucMfdp5zcd1DoEYp1kvKmqA9pFjGGS6fjz5NbyXAtOpsgI-r52MIjv_HmyR6FP_YoMpgdilhG4bAqL7UazR0NdLn-.png?r=a6e"
+           alt="logo" id="xd23"></a>
+        </br>
+           <a href="nosotros.html" id="nosotros">Sobre nosotros</a>
+            <!-- <li><a href=>Tercera temporada</a></li> -->
+
+
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="content">
+
+        <section class="landing" id="landing-page">
+
+            <!-- CAROUSEL -->
+            <div class="carousel">
+                <a id="back" class="button"><i class="fas fa-angle-left"></i></a>
+
+                <!-- SLIDE -->
+                <div class="slide">
+                    <!-- FACTS -->
+                    <div id="facts">
+                        <h2>Datos curiosos que sólo los verdaderos fans de Rick and Morty conocen</h2>
+
+                        <p class="carousel__p" id="curiosity"></p>
+                        <marquee direction="left" onmouseout="start()" onmouseover="stop()" scrollamount="10"
+                            scrolldelay="200">
+
+                            <img src="http://notinerd.com/wp-content/uploads/2017/10/2rick.jpg" alt="" height="100">
+                            <img src="http://notinerd.com/wp-content/uploads/2017/10/3rick.jpg" alt="" height="100">
+                            <img src="http://notinerd.com/wp-content/uploads/2017/10/7rick.jpg" alt="" height="100">
+                            <img src="http://notinerd.com/wp-content/uploads/2017/10/10rick.jpeg" alt="" height="100">
+                            <img src="http://notinerd.com/wp-content/uploads/2017/10/13rick.jpg" alt="" height="100">
+
+                        </marquee>
+                    </div>
+                </div>
+                <a id="next" class="button"><i class="fas fa-angle-right"></i></a>
+
+            </div></br>
+        </br>
+    </br>
+
+            <input type="button" class="button" value="Personajes" id="catalogo">
+        </section>
+
+        <!-- CHARACTERS -->
+
+        <section id="characters-page" class="hide">
+            <div class="content">
+                <h2>Personajes</h2>
+                <!-- <h3>Da click en tu personaje para saber más sobre el</h3> -->
+                <div class="order-and-filter-button">
+                    <div class="order-filter">
+                        <select name="filter" id="filter">
+                            <option value="filter" class="filter"> Filtrar</option>
+                            <option value="all">Todos</option>
+                            <option value="name.Rick">Todos los Ricks</option>
+                            <option value="name.Morty">Todos los Morty</option>
+                            <option value="gender.Female">Mujer</option>
+                            <option value="gender.Male">Hombre</option>
+                            <option value="status.Alive">Vivo</option>
+                            <option value="status.Dead">Muerto</option>
+                        </select>
+                        <select name="order" id="order">
+                            <option value="order" class="order">Ordenar</option>
+                            <option value="a-z">de la A a la Z</option>
+                            <option value="z-a">de la Z a la A</option>
+                        </select>
+                    </div>
+                    <div class="specie">
+                        <select name="species" id="species">
+                            <option value="species">Especies</option>
+                            <option value="species.Human">Humanos</option>
+                            <option value="species.Humanoid">Humanoide</option>
+                            <option value="species.Vampire">Vampiro</option>
+                            <option value="species.Alien">Alien</option>
+                            <option value="species.unknown">Desconocida</option>
+                            <option value="species.Cronenberg">Cronenberg</option>
+                            <option value="species.Poopybutthole">Poopybutthole</option>
+                            <option value="species.Robot">Robot</option>
+                            <option value="species.Disease">Disease</option>
+                            <option value="species.Animal">Animal</option>
+                            
+
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+          
+    <div class="counter">
+        <h3>Se encontraron <span id="counter"></span> personajes.</h3>
+    </div>
+    <section class="all-data" id="all-data">
+
+    </section>
+</section>
+</main>
+    
+</div>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
